@@ -1,0 +1,69 @@
+body {
+  font-family: system-ui, sans-serif;
+  background: #111827;
+  color: #e5e7eb;
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.card {
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 0.8rem;
+  border: 1px solid #334155;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin-top: 0.3rem;
+  padding: 0.6rem 0.8rem;
+  background: #0f172a;
+  border-radius: 0.5rem;
+  border: 1px solid #334155;
+  color: #e5e7eb;
+}
+
+textarea {
+  min-height: 220px;
+  resize: vertical;
+}
+
+button {
+  margin-top: 1rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: 999px;
+  background: #2563eb;
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+
+#copyBtn {
+  background: #10b981;
+  margin-left: 0.7rem;
+}
+
+.status {
+  margin-top: 0.8rem;
+  min-height: 1.5rem;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.row-inline {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

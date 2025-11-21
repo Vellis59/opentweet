@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>OpenTweet – AI Tweet Generator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>OpenTweet</h1>
+    <p>Generate tweets instantly. 100% local, BYOK.</p>
+  </header>
+
+  <main class="card">
+    <form id="tweet-form">
+      <label>
+        OpenRouter API Key
+        <small>(stored locally if you choose)</small>
+      </label>
+      <input type="password" id="apiKey" placeholder="sk-or-..." />
+
+      <label class="row-inline">
+        <input type="checkbox" id="rememberKey" />
+        <span>Remember API key</span>
+      </label>
+
+      <label>Topic</label>
+      <input type="text" id="topic" placeholder="e.g. Self-hosting tools" required />
+
+      <label>Language</label>
+      <select id="language">
+        <option value="english" selected>English</option>
+        <option value="french">French</option>
+      </select>
+
+      <label>Number of tweets</label>
+      <select id="count">
+        <option value="1">1 tweet</option>
+        <option value="3" selected>3 tweets</option>
+        <option value="5">5 tweets</option>
+      </select>
+
+      <button type="button" id="generateBtn">Generate Tweets</button>
+      <button type="button" id="copyBtn">Copy Markdown</button>
+
+      <div id="status" class="status"></div>
+
+      <label>Result</label>
+      <textarea id="output"></textarea>
+    </form>
+  </main>
+
+  <script src="app.js?v=1.0"></script>
+</body>
+</html>
